@@ -24,6 +24,12 @@ dependencies {
 	// https://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-impl
 	implementation group: 'com.sun.xml.bind', name: 'jaxb-impl', version: '3.0.0'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	compile('org.springframework.boot:spring-boot-starter-security')
+	compile('org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.0.0.RELEASE')
+	compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+	compile('org.springframework.session:spring-session-jdbc')
+
+
 }
 
 test {
